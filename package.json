@@ -1,0 +1,15 @@
+{
+  "name": "refinery-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cp -R node_modules/bootstrap/scss themes/refinery && node_modules/node-sass/bin/node-sass themes/refinery/bootstrap.scss vendor/assets/stylesheets/refinery.css && rm -rf themes/refinery/scss"
+  },
+  "author": "Samuel Seay",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "git+https://github.com/twbs/bootstrap.git#v4-dev",
+    "node-sass": "^3.9.3"
+  }
+}
